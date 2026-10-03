@@ -46,13 +46,6 @@ Clinic-Sites/
    git push -u origin main
    ```
 
-2. **Import to Vercel**:
-   - Go to [vercel.com](https://vercel.com)
-   - Click **Add New → Project**
-   - Import your GitHub repository
-   - Vercel auto-detects static site — click **Deploy**
-   - Done! Your site is live at `your-project.vercel.app`
-
 ## 🩺 Clinic Details
 
 | Field     | Details                               |
