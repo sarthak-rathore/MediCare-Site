@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediCare Clinic – Dr. Arjun Sharma | Internal Medicine Specialist | Mumbai</title>
+  <meta name="description" content="MediCare Clinic offers world-class internal medicine care in Bandra, Mumbai. Dr. Arjun Sharma – 15+ years experience. Book your appointment today." />
+  <meta name="keywords" content="doctor clinic Mumbai, internal medicine, Dr Arjun Sharma, Bandra clinic, specialist doctor" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-ring"></div>
+    <span class="loader-text">MediCare</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+        <span>Medi<strong>Care</strong></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" role="navigation" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#facilities" class="nav-link">Facilities</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#appointment" class="btn-book nav-btn" id="nav-book-btn">Book Appointment</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-bg-image">
+      <img src="images/clinic_hero.jpg" alt="MediCare Clinic Interior" loading="eager" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-award"></i> Trusted Healthcare Since 2009
+      </div>
+      <h1 class="hero-title">
+        Your Health Is Our
+        <span class="gradient-text">Priority</span>
+      </h1>
+      <p class="hero-subtitle">
+        Advanced internal medicine care with a compassionate touch.<br />
+        State-of-the-art diagnostics &middot; Expert consultations &middot; 24/7 Support.
+      </p>
+      <div class="hero-cta">
+        <a href="#appointment" class="btn-primary" id="hero-book-btn">
+          <i class="fas fa-calendar-check"></i> Book Appointment
+        </a>
+        <a href="#about" class="btn-outline" id="hero-learn-btn">
+          <i class="fas fa-play-circle"></i> Meet the Doctor
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <span class="stat-num" data-target="15000">0</span><span>+</span>
+          <span class="stat-label">Patients Treated</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-pill">
+          <span class="stat-num" data-target="15">0</span><span>+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-pill">
+          <span class="stat-num" data-target="98">0</span><span>%</span>
+          <span class="stat-label">Patient Satisfaction</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll to Explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrapper" aria-hidden="true">
+    <div class="marquee-track">
+      <span><i class="fas fa-heartbeat"></i> General Medicine</span>
+      <span><i class="fas fa-lungs"></i> Pulmonology</span>
+      <span><i class="fas fa-brain"></i> Neurology</span>
+      <span><i class="fas fa-heart"></i> Cardiology</span>
+      <span><i class="fas fa-microscope"></i> Advanced Diagnostics</span>
+      <span><i class="fas fa-syringe"></i> Preventive Care</span>
+      <span><i class="fas fa-pills"></i> Chronic Disease Mgmt</span>
+      <span><i class="fas fa-stethoscope"></i> Primary Care</span>
+      <span><i class="fas fa-heartbeat"></i> General Medicine</span>
+      <span><i class="fas fa-lungs"></i> Pulmonology</span>
+      <span><i class="fas fa-brain"></i> Neurology</span>
+      <span><i class="fas fa-heart"></i> Cardiology</span>
+      <span><i class="fas fa-microscope"></i> Advanced Diagnostics</span>
+      <span><i class="fas fa-syringe"></i> Preventive Care</span>
+      <span><i class="fas fa-pills"></i> Chronic Disease Mgmt</span>
+      <span><i class="fas fa-stethoscope"></i> Primary Care</span>
+    </div>
+  </div>
+
+  <!-- ABOUT / DOCTOR -->
+  <section id="about" class="about-section section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col reveal-left">
+          <div class="about-img-wrapper">
+            <img src="images/doctor_portrait.jpg" alt="Dr. Arjun Sharma - Internal Medicine Specialist" loading="lazy" />
+            <div class="img-glow-ring"></div>
+            <div class="experience-badge">
+              <span class="exp-number">15+</span>
+              <span class="exp-label">Years of<br/>Excellence</span>
+            </div>
+          </div>
+          <div class="doctor-credentials">
+            <div class="cred-item"><i class="fas fa-graduation-cap"></i><span>MBBS - AIIMS Delhi</span></div>
+            <div class="cred-item"><i class="fas fa-award"></i><span>MD Internal Medicine - KEM Mumbai</span></div>
+            <div class="cred-item"><i class="fas fa-certificate"></i><span>Fellow - American College of Physicians</span></div>
+          </div>
+        </div>
+
+        <div class="about-content-col reveal-right">
+          <div class="section-label">About the Doctor</div>
+          <h2 class="section-title">
+            Dr. Arjun Sharma
+            <span class="title-accent">MD, FACP</span>
+          </h2>
+          <p class="about-tagline">Internal Medicine &amp; Chronic Disease Specialist</p>
+          <p class="about-desc">
+            With over <strong>15 years of clinical excellence</strong>, Dr. Arjun Sharma combines the precision of modern medicine with genuine patient-centric care. A graduate of AIIMS Delhi and KEM Mumbai, he has treated over 15,000 patients and published research in leading medical journals.
+          </p>
+          <p class="about-desc">
+            Specialising in complex internal medicine cases, diabetes management, hypertension, and preventive healthcare, Dr. Sharma is committed to making world-class care accessible to every patient who walks through the doors of MediCare Clinic.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item" id="hl-1">
+              <i class="fas fa-user-md"></i>
+              <div>
+                <strong>Personalised Treatment</strong>
+                <p>Tailored care plans for every individual patient</p>
+              </div>
+            </div>
+            <div class="highlight-item" id="hl-2">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Timely Consultations</strong>
+                <p>No long waiting queues - scheduled appointments</p>
+              </div>
+            </div>
+            <div class="highlight-item" id="hl-3">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <strong>24/7 Patient Support</strong>
+                <p>Always available for urgent queries and follow-ups</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#appointment" class="btn-primary" id="about-book-btn">
+            <i class="fas fa-calendar-plus"></i> Book a Consultation
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services-section section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Our Specialised <span class="gradient-text">Services</span></h2>
+        <p class="section-desc">Comprehensive care across a wide spectrum of internal medicine disciplines, powered by cutting-edge technology.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal-up" id="svc-1" style="--delay:0s">
+          <div class="service-icon-wrap teal"><i class="fas fa-heart-pulse"></i></div>
+          <h3>Cardiology</h3>
+          <p>Advanced cardiac evaluations, ECG, Echo, Holter monitoring, and management of hypertension and heart disease.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal-up" id="svc-2" style="--delay:0.1s">
+          <div class="service-icon-wrap blue"><i class="fas fa-brain"></i></div>
+          <h3>Neurology</h3>
+          <p>Diagnosis and management of headaches, migraines, vertigo, sleep disorders, and neurological conditions.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal-up" id="svc-3" style="--delay:0.2s">
+          <div class="service-icon-wrap purple"><i class="fas fa-syringe"></i></div>
+          <h3>Diabetes Care</h3>
+          <p>Comprehensive diabetes management, HbA1c monitoring, insulin therapy, and lifestyle counselling.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal-up" id="svc-4" style="--delay:0.3s">
+          <div class="service-icon-wrap green"><i class="fas fa-lungs"></i></div>
+          <h3>Pulmonology</h3>
+          <p>Asthma, COPD, sleep apnea, pulmonary function tests, and complete respiratory health management.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal-up" id="svc-5" style="--delay:0.4s">
+          <div class="service-icon-wrap orange"><i class="fas fa-microscope"></i></div>
+          <h3>Advanced Diagnostics</h3>
+          <p>In-house lab with complete blood panels, urine analysis, thyroid function, culture and sensitivity reports.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal-up" id="svc-6" style="--delay:0.5s">
+          <div class="service-icon-wrap pink"><i class="fas fa-shield-heart"></i></div>
+          <h3>Preventive Health</h3>
+          <p>Annual health check-up packages, vaccinations, cancer screenings, and personalised wellness plans.</p>
+          <a href="#appointment" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSULTATION VISUAL BAND -->
+  <section class="consult-band section">
+    <div class="consult-img-wrap">
+      <img src="images/clinic_consultation.jpg" alt="Doctor consulting with patient at MediCare Clinic" loading="lazy" />
+      <div class="consult-overlay"></div>
+    </div>
+    <div class="consult-content reveal-up">
+      <div class="section-label light">Personal Consultations</div>
+      <h2 class="section-title light">Every Patient Deserves<br/>Undivided Attention</h2>
+      <p>We believe great healthcare starts with listening. Dr. Sharma dedicates full time to every consultation, ensuring you feel heard, understood, and confident in your care plan.</p>
+      <a href="#appointment" class="btn-primary" id="consult-book-btn">Schedule a Visit</a>
+    </div>
+  </section>
+
+  <!-- FACILITIES GALLERY -->
+  <section id="facilities" class="facilities-section section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Inside MediCare</div>
+        <h2 class="section-title">World-Class <span class="gradient-text">Facilities</span></h2>
+        <p class="section-desc">Our clinic is equipped with the latest medical technology in a warm, comfortable environment designed for your wellbeing.</p>
+      </div>
+
+      <div class="gallery-bento">
+        <div class="bento-item bento-large reveal-left" id="bento-1">
+          <img src="images/clinic_hero.jpg" alt="MediCare Clinic Reception" loading="lazy" />
+          <div class="bento-label"><i class="fas fa-building"></i><span>Reception &amp; Main Lobby</span></div>
+        </div>
+        <div class="bento-col-right">
+          <div class="bento-item reveal-right" id="bento-2" style="--delay:0.1s">
+            <img src="images/clinic_waiting.jpg" alt="Patient waiting area" loading="lazy" />
+            <div class="bento-label"><i class="fas fa-couch"></i><span>Premium Waiting Lounge</span></div>
+          </div>
+          <div class="bento-item reveal-right" id="bento-3" style="--delay:0.2s">
+            <img src="images/clinic_lab.jpg" alt="Advanced medical laboratory" loading="lazy" />
+            <div class="bento-label"><i class="fas fa-flask"></i><span>Advanced Diagnostics Lab</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="facility-features">
+        <div class="ff-item reveal-up" id="ff-1"><i class="fas fa-wifi"></i><span>Free Wi-Fi</span></div>
+        <div class="ff-item reveal-up" id="ff-2"><i class="fas fa-parking"></i><span>Free Parking</span></div>
+        <div class="ff-item reveal-up" id="ff-3"><i class="fas fa-wheelchair"></i><span>Disabled Access</span></div>
+        <div class="ff-item reveal-up" id="ff-4"><i class="fas fa-snowflake"></i><span>Air Conditioned</span></div>
+        <div class="ff-item reveal-up" id="ff-5"><i class="fas fa-video"></i><span>CCTV Security</span></div>
+        <div class="ff-item reveal-up" id="ff-6"><i class="fas fa-pills"></i><span>In-House Pharmacy</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="stats-particles" id="stats-particles" aria-hidden="true"></div>
+    <div class="container stats-grid">
+      <div class="big-stat reveal-up" id="big-stat-1">
+        <span class="big-num" data-target="15000">0</span><span class="big-suffix">+</span>
+        <p>Patients Treated</p>
+      </div>
+      <div class="big-stat reveal-up" id="big-stat-2" style="--delay:0.1s">
+        <span class="big-num" data-target="15">0</span><span class="big-suffix">+</span>
+        <p>Years Experience</p>
+      </div>
+      <div class="big-stat reveal-up" id="big-stat-3" style="--delay:0.2s">
+        <span class="big-num" data-target="98">0</span><span class="big-suffix">%</span>
+        <p>Patient Satisfaction</p>
+      </div>
+      <div class="big-stat reveal-up" id="big-stat-4" style="--delay:0.3s">
+        <span class="big-num" data-target="8">0</span><span class="big-suffix">+</span>
+        <p>Specialisations</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="testimonials-section section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Patient Reviews</div>
+        <h2 class="section-title">What Our Patients <span class="gradient-text">Say</span></h2>
+      </div>
+
+      <div class="testimonials-slider" id="testimonials-slider">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-card" id="test-1">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="test-text">"Dr. Sharma is absolutely exceptional. He spent a full 45 minutes with me, explaining everything in detail. My diabetes is now well-controlled after just 3 months under his care. Highly recommend MediCare!"</p>
+            <div class="test-author">
+              <div class="author-avatar">RS</div>
+              <div><strong>Rajesh Sharma</strong><span>Diabetic Care Patient</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="test-2">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="test-text">"The clinic is spotlessly clean, staff is super friendly, and the waiting time is minimal. Dr. Arjun's diagnosis was spot-on when three other doctors had missed it. A true expert!"</p>
+            <div class="test-author">
+              <div class="author-avatar">PD</div>
+              <div><strong>Priya Desai</strong><span>Cardiac Patient</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="test-3">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="test-text">"MediCare Clinic gave our family exactly the medical attention we needed. From online appointment booking to post-consultation calls - the service is top-tier. The lab reports are super fast too!"</p>
+            <div class="test-author">
+              <div class="author-avatar">AK</div>
+              <div><strong>Anil Kumar</strong><span>Family Health Check-Up</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card" id="test-4">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="test-text">"Best doctor in Bandra! Dr. Sharma treated my chronic respiratory issues when I thought I'd have to live with them forever. Within 2 months I was breathing freely. Life-changing!"</p>
+            <div class="test-author">
+              <div class="author-avatar">MN</div>
+              <div><strong>Meena Nair</strong><span>Pulmonology Patient</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="slider-prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot active" id="dot-0"></span>
+          <span class="dot" id="dot-1"></span>
+          <span class="dot" id="dot-2"></span>
+          <span class="dot" id="dot-3"></span>
+        </div>
+        <button class="slider-btn" id="slider-next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT FORM -->
+  <section id="appointment" class="appointment-section section">
+    <div class="appt-bg-shape" aria-hidden="true"></div>
+    <div class="container">
+      <div class="appt-grid">
+        <div class="appt-info reveal-left">
+          <div class="section-label light">Book a Visit</div>
+          <h2 class="section-title light">Schedule Your<br/>Appointment</h2>
+          <p class="appt-desc">Choose a convenient time slot and our team will confirm within 30 minutes.</p>
+          <div class="appt-contact-items">
+            <div class="appt-contact-item" id="appt-phone">
+              <div class="appt-icon"><i class="fas fa-phone-alt"></i></div>
+              <div><strong>Call Us</strong><a href="tel:+912226501234">+91 22 2650 1234</a></div>
+            </div>
+            <div class="appt-contact-item" id="appt-whatsapp">
+              <div class="appt-icon"><i class="fab fa-whatsapp"></i></div>
+              <div><strong>WhatsApp</strong><a href="https://wa.me/919820000000" target="_blank" rel="noopener">+91 98200 00000</a></div>
+            </div>
+            <div class="appt-contact-item" id="appt-hours">
+              <div class="appt-icon"><i class="fas fa-clock"></i></div>
+              <div><strong>Clinic Hours</strong><span>Mon-Sat: 9:00 AM - 8:00 PM</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="appt-form-wrap reveal-right">
+          <form id="appointment-form" class="appt-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Full Name *</label>
+                <input type="text" id="form-name" name="name" placeholder="Your full name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="form-phone">Phone *</label>
+                <input type="tel" id="form-phone" name="phone" placeholder="+91 XXXXX XXXXX" required autocomplete="tel" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" name="email" placeholder="you@example.com" autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="form-date">Preferred Date *</label>
+                <input type="date" id="form-date" name="date" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-service">Service Required *</label>
+              <select id="form-service" name="service" required>
+                <option value="">Select a service...</option>
+                <option value="general">General Consultation</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="neurology">Neurology</option>
+                <option value="diabetes">Diabetes Care</option>
+                <option value="pulmonology">Pulmonology</option>
+                <option value="diagnostics">Advanced Diagnostics</option>
+                <option value="preventive">Preventive Health Check-Up</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="form-message">Brief Symptoms / Note</label>
+              <textarea id="form-message" name="message" rows="3" placeholder="Briefly describe your concern..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="form-submit-btn">
+              <i class="fas fa-paper-plane"></i> Confirm Appointment
+            </button>
+            <p class="form-privacy"><i class="fas fa-lock"></i> Your information is 100% private and secure.</p>
+          </form>
+          <div class="form-success" id="form-success" hidden>
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Appointment Requested!</h3>
+            <p>We will call you within 30 minutes to confirm your slot.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & MAP -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title">Visit <span class="gradient-text">MediCare Clinic</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-col reveal-left">
+          <div class="contact-card" id="contact-address">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Address</strong>
+              <p>MediCare Clinic, 12 Hill Road,<br />Bandra West, Mumbai - 400 050<br />Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-phone">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+912226501234">+91 22 2650 1234</a><br /><a href="tel:+919820000000">+91 98200 00000</a></p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-email">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:info@medicareclinic.in">info@medicareclinic.in</a><br /><a href="mailto:appointments@medicareclinic.in">appointments@medicareclinic.in</a></p>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-timing">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Clinic Hours</strong>
+              <p>Mon - Fri: 9:00 AM - 8:00 PM<br />Saturday: 9:00 AM - 6:00 PM<br />Sunday: 10:00 AM - 2:00 PM (Emergency)</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" id="social-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" id="social-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919820000000" class="social-btn" id="social-wa" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-btn" id="social-yt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="map-col reveal-right">
+          <div class="map-wrapper">
+            <iframe
+              id="google-map"
+              title="MediCare Clinic location map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0!2d72.8315!3d19.0596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91b!2sBandra%20West%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <a href="https://maps.google.com/?q=Bandra+West+Mumbai" target="_blank" rel="noopener" class="btn-outline-dark" id="directions-btn">
+            <i class="fas fa-directions"></i> Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+            <span>Medi<strong>Care</strong></span>
+          </div>
+          <p>Providing compassionate, cutting-edge healthcare to the people of Mumbai since 2009.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/919820000000" class="social-btn" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Dr. Sharma</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#testimonials">Patient Reviews</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Cardiology</a></li>
+            <li><a href="#services">Neurology</a></li>
+            <li><a href="#services">Diabetes Care</a></li>
+            <li><a href="#services">Pulmonology</a></li>
+            <li><a href="#services">Preventive Health</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 12 Hill Road, Bandra West,<br />Mumbai - 400 050</p>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:+912226501234">+91 22 2650 1234</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:info@medicareclinic.in">info@medicareclinic.in</a></p>
+          <p><i class="fas fa-clock"></i> Mon-Sat: 9 AM - 8 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 MediCare Clinic. All rights reserved.</p>
+        <p>Designed with <i class="fas fa-heart" style="color:#14b8a6"></i> for better health.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919820000000" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
